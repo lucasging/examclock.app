@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-export default function TimeDisplay({ showSeconds, darkMode, showText }: { showSeconds: boolean; darkMode: boolean; showText: boolean }) {
+export default function TimeDisplay({ darkMode, showText }: { darkMode: boolean; showText: boolean }) {
     const [time, setTime] = useState(() => new Date());
     const [isClient, setIsClient] = useState(false);
 
@@ -21,7 +21,6 @@ export default function TimeDisplay({ showSeconds, darkMode, showText }: { showS
     const formattedTime = time.toLocaleTimeString([], {
         hour: "2-digit",
         minute: "2-digit"
-        //second: showSeconds ? "2-digit" : undefined
       });
 
     return (

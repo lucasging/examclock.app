@@ -61,7 +61,7 @@ export default function Home() {
       <Header darkMode={settings.darkMode} settings={settings} onToggle={handleToggle} />
       <main className={`min-h-screen flex ${settings.showText ? "flex-row" : "flex-col"} items-center justify-center pt-20`}>
         <div className={`flex items-center justify-center ${settings.showText ? "w-1/2" : "w-full"} flex-col items-center justify-center p-8 space-y-6`}>
-          <TimeDisplay showSeconds={false} darkMode={settings.darkMode} showText={settings.showText} />
+          <TimeDisplay darkMode={settings.darkMode} showText={settings.showText} />
           {settings.showAccessCode && <AccessCode darkMode={settings.darkMode} />}
         </div>
 

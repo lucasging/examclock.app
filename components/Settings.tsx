@@ -8,12 +8,6 @@ type SettingsProps = {
 export default function Settings({settings, onToggle}: SettingsProps) {
     return(
         <div className="flex flex-wrap gap-4">
-            {/* <Toggle 
-                label="Show Seconds" 
-                defaultChecked={settings.showSeconds} 
-                onToggle={(value) => onToggle("showSeconds", value)}
-                darkMode={settings.darkMode}
-            /> */}
             <Toggle 
                 label="Information Textbox" 
                 defaultChecked={settings.showText} 
