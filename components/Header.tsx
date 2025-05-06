@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from 'react';
 import Settings from './Settings';
 
 interface HeaderProps {
@@ -15,8 +14,6 @@ interface HeaderProps {
 }
 
 export default function Header({ darkMode, settings, onToggle }: HeaderProps) {
-  const [showMenu, setShowMenu] = useState(false);
-
   return (
     <div className={`fixed top-0 left-0 w-full z-10 flex justify-between items-center px-6 py-4 gap-x-8 ${darkMode ? 'bg-[#1a1a1a]/80' : 'bg-white/80'} backdrop-blur-md border-b ${darkMode ? 'border-gray-800' : 'border-gray-200'} shadow-sm`}>
       <div className="relative group">
