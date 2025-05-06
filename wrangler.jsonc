@@ -1,0 +1,7 @@
+{
+  "name": "examclock",
+  "compatibility_date": "2024-05-06",
+  "assets": {
+    "directory": "./out"
+  }
+} 
