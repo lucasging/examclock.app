@@ -31,7 +31,7 @@ export default function Header({ darkMode, settings, onToggle }: HeaderProps) {
           }`}
         >
           <a 
-            href="https://github.com/lucasgingera/examclock-app" 
+            href="https://github.com/lucasgingera/examclock.app" 
             target="_blank" 
             rel="noopener noreferrer"
             className={`block py-2 transition-colors duration-200 ${
