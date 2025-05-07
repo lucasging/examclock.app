@@ -21,7 +21,7 @@ export default function Toggle({ label, defaultChecked = false, onToggle, darkMo
   return (
     <label className="flex items-center space-x-3 cursor-pointer group">
       {label && (
-        <span className={`text-sm font-medium ${darkMode ? 'text-gray-200' : 'text-gray-700'} group-hover:${darkMode ? 'text-white' : 'text-gray-900'} transition-colors duration-200`}>
+        <span className={`text-sm font-medium transition-colors duration-300 ${darkMode ? 'text-gray-200' : 'text-gray-700'} group-hover:${darkMode ? 'text-white' : 'text-gray-900'}`}>
           {label}
         </span>
       )}

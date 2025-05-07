@@ -21,6 +21,12 @@ export default function Settings({settings, onToggle}: SettingsProps) {
                 darkMode={settings.darkMode}
             />
             <Toggle 
+                label="Show Seconds" 
+                defaultChecked={settings.showSeconds} 
+                onToggle={(value) => onToggle("showSeconds", value)}
+                darkMode={settings.darkMode}
+            />
+            <Toggle 
                 label="Keep Screen On" 
                 defaultChecked={settings.keepScreenOn} 
                 onToggle={(value) => onToggle("keepScreenOn", value)}
